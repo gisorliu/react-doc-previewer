@@ -1,0 +1,47 @@
+.xlsRoot {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .contentCon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 48px;
+    overflow: auto;
+    background-color: #808080;
+  }
+  .sheets {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    background: #17375e;
+    padding: 1px;
+    color: rgba(255, 255, 255, 0.8);
+    // border-top: thin solid gray;
+    // box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.1);
+    .sheetItem {
+      box-shadow: 0px -1px 1px rgba(234, 238, 255, 0.1),
+        inset 0px -1px 1px rgba(255, 255, 255, 0.15), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      margin: 0 2px 0 2px;
+      padding: 0 5px 0 5px;
+      line-height: 48px;
+      text-align: center;
+      width: auto;
+      background-color: #111438;
+      &.sel {
+        margin: 0 2px 0 2px;
+        background-color: #353d5b;
+        font-weight: 800;
+        color: #3ce5d3;
+      }
+    }
+  }
+}
